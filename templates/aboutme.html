@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://fontawesome.com/icons/github?s=&f=brands" crossorigin="anonymous"></script>
+    <script src="https://fontawesome.com/icons/linkedin?s=&f=brands" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('serve_frontend', path='Style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>About Me</title>
+    <link rel="icon" type="image/x-icon" href="../frontend/images/favicon.ico">
+</head>
+    <nav class="navbar navbar-dark bg-dark">
+      <div style="font-family: Georgia, 'Times New Roman', Times, serif;"
+           class="container-fluid d-flex justify-content-center">
+        <div class="d-flex align-items-center mr-auto">
+          <a class="navbar-brand" style="color:#ffffff;">
+            <img src="../frontend/images/logo_3.png" width="40" height="32" class="d-inline-block align-top" alt="">
+            Locus.ai
+          </a>
+        </div>
+        <a class="nav-link {% if request.path == url_for('home') %}active{% endif %}" href="{{ url_for('home') }}">Home</a>
+        <a class="nav-link {% if request.path == url_for('demo') %}active{% endif %}" href="{{ url_for('demo') }}">Demo</a>
+        <a class="nav-link disabled {% if request.path == url_for('aboutme') %}active{% endif %}" href="{{ url_for('aboutme') }}">About Me</a>
+        <a class="nav-link {% if request.path == url_for('faq') %}active{% endif %}" href="{{ url_for('faq') }}">Methodology</a>
+      </div>
+    </nav>
+<body class="about-us">
+  <div class="column">
+    <div class="card_custom">
+        <div class="atilla">
+      <img src="../frontend/images/atillaanimated.png" alt="Atilla" style="width:50%">
+        <h2>Atilla Colak</h2>
+        <p><i>Founder</i></p>
+        <p>I am a computer science student at TU Delft.</p>
+        <p>atilla.colak@outlook.com</p>
+        <a href="https://github.com/AtillaColak" id="github"><i class="fa fa-github" style="font-size:36px"></i></a>
+        <a href="https://www.linkedin.com/in/atilla-colak/"><i class="fa fa-linkedin" style="font-size:36px"></i></a>
+            </div>
+    </div>
+  </div>
+
+
+</body>
+<footer>
+    <div class="bg-dark py-4">
+      <div class="container text-center">
+        <p class="text-muted mb-0 py-2"> Locus.ai ©2023, All rights reserved.</p>
+      </div>
+    </div>
+</footer>
+</html>

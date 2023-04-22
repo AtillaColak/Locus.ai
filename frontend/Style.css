@@ -1,0 +1,57 @@
+body {
+  display: flex;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  flex-direction: column;
+  min-height: 100vh; /* set minimum height to 100% of viewport height */
+}
+
+.column {
+  flex: 1; /* take up all available vertical space */
+  justify-content: center;
+  align-self: center;
+}
+
+footer {
+  width: 100%;
+  align-self: flex-end; /* align footer to bottom of container */
+}
+
+
+.about-us {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: linear-gradient(rgb(144, 195, 228), rgb(47, 129, 224));
+  height: 100%;
+  margin: 0;
+}
+
+.column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 1rem;
+}
+
+.card_custom {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  width: 60%;
+}
+
+.atilla {
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.atilla a:last-child {
+  margin-left: 20px;
+  color: #954fb4;
+}
+
+#github {
+  margin-left: 20px;
+  color: #954fb4;
+}

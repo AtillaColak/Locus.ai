@@ -1,0 +1,135 @@
+#body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* set minimum height to 100% of viewport height */
+  background-color: rgb(95, 182, 236);
+}
+
+
+[type='radio'] {
+display: none;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-around;
+}
+
+#column_left{
+  margin-left: 6%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  margin-bottom: 3%;
+}
+
+#image-container{
+  display: flex;
+  margin-right: 10%;
+  justify-content: center;
+  align-self: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  margin-bottom: 12%;
+}
+
+#text-input {
+  resize: none;
+}
+
+#form_prompt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#text-input {
+  width: 100%;
+  background: #efefef;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid rgb(99, 101, 101);
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  resize: none;
+}
+
+#text-input:focus {
+  outline: none;
+  border-bottom: 2px solid rgb(95, 182, 236);
+}
+
+#button {
+  padding: 10px 20px;
+  margin-bottom: 7%;
+  background-color: rgb(43, 89, 119);
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+#button:hover {
+  background-color: #3d4a69;
+}
+
+#download-button {
+  padding: 10px 20px;
+  background-color: rgb(43, 89, 119);
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+#download-button:hover {
+  background-color: #3d4a69;
+}
+
+footer {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  bottom: 0;
+  width: 100%;
+  align-self: flex-end; /* align footer to bottom of container */
+}
+
+#design{
+  margin-bottom: 4%;
+  margin-top: 2%;
+}
+
+#dropdownMenuButton{
+  color: white;
+  background: #4e597a;
+  min-width: 100%;
+}
+
+#dropdownMenuButton:hover{
+  background: #3498db;
+}
+
+.spinner {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: 50px auto;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

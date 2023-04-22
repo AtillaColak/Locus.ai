@@ -1,0 +1,37 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* set minimum height to 100% of viewport height */
+}
+
+html body {
+    background-color: rgb(95, 182, 236);
+}
+
+.column {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  flex: 1; /* take up all available vertical space */
+  justify-content: center;
+  margin-top: 20%;
+  align-self: center;
+  font-size: 20px;
+}
+
+.column:after {
+  content: "";
+  animation: dots 2s infinite;
+}
+
+@keyframes dots {
+  0% { content: ""; }
+  25% { content: "."; }
+  50% { content: ".."; }
+  75% { content: "."; }
+  100% { content: ""; }
+}
+
+footer {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 100%;
+  align-self: flex-end; /* align footer to bottom of container */
+}
